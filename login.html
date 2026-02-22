@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Portal Login | Luminous Skin Clinic</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="page-bg"
+        style="background-image: url('https://images.pexels.com/photos/3762466/pexels-photo-3762466.jpeg?auto=compress&cs=tinysrgb&w=1920&q=80');">
+    </div>
+    <div class="overlay"></div>
+
+    <header>
+        <a href="index.html" class="logo">
+            <div class="logo-icon"></div>
+            <span>Luminous Skin Clinic</span>
+        </a>
+        <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home 1</a></li>
+                <li><a href="home2.html">Home 2</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="treatments.html">Treatments</a></li>
+                <li><a href="doctors.html">Doctors</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html" class="active" style="color: var(--accent-color); font-weight: 700;">Login</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header-tools">
+            <label class="theme-switch">
+                <input type="checkbox" id="theme-toggle">
+                <span class="slider"></span>
+            </label>
+        </div>
+    </header>
+
+    <main class="login-container">
+        <div class="login-card fade-in">
+            <!-- Website Name Header -->
+            <a href="index.html" class="logo" style="margin-bottom: 1.5rem; justify-content: center;">
+                <div class="logo-icon" style="width: 30px; height: 30px;"></div>
+                <span style="font-size: 1.4rem;">Luminous Skin</span>
+            </a>
+
+            <div class="login-right">
+                <!-- Login Form -->
+                <div id="login-form">
+                    <h3 style="margin-bottom: 1.5rem; text-align: center; color: var(--accent-color);">Sign In</h3>
+                    <form>
+                        <div class="form-group">
+                            <label>Email Address</label>
+                            <input type="email" class="form-control" placeholder="yourname@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input type="password" class="form-control" placeholder="••••••••" required>
+                        </div>
+                        <div
+                            style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+                            <div style="display: flex; align-items: center; gap: 8px;">
+                                <input type="checkbox" id="remember">
+                                <label for="remember" style="font-size: 0.9rem;">Keep me signed in</label>
+                            </div>
+                            <a href="#" class="forgot-password">Forgot Password?</a>
+                        </div>
+                        <button type="submit" class="btn btn-primary"
+                            style="width: 100%; padding: 12px; font-size: 1rem; margin-bottom: 1rem;">Login to
+                            Portal</button>
+                    </form>
+                    <p style="text-align: center;">New to the clinic? <a href="#" id="toggle-signup"
+                            style="color: var(--accent-color); font-weight: 600;">Create an account</a></p>
+                </div>
+
+                <!-- Signup Form -->
+                <div id="signup-form" class="hidden">
+                    <h3 style="margin-bottom: 1.5rem; text-align: center; color: var(--accent-color);">Register Account
+                    </h3>
+                    <form>
+                        <div class="form-group">
+                            <label>Full Name</label>
+                            <input type="text" class="form-control" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email Address</label>
+                            <input type="email" class="form-control" placeholder="yourname@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Phone Number</label>
+                            <input type="tel" class="form-control" placeholder="+1 234 567 890" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Create Password</label>
+                            <input type="password" class="form-control" placeholder="Min. 8 characters" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Confirm Password</label>
+                            <input type="password" class="form-control" placeholder="Repeat your password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary"
+                            style="width: 100%; padding: 12px; font-size: 1rem; margin-bottom: 1rem;">Sign Up
+                            Now</button>
+                    </form>
+                    <p style="text-align: center;">Already have an account? <a href="#" id="toggle-login"
+                            style="color: var(--accent-color); font-weight: 600;">Log in here</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+    <script>
+        document.querySelector('#login-form form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            // Simulate login success and redirect to dashboard
+            window.location.href = 'dashboard.html';
+        });
+
+        document.querySelector('#signup-form form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            // Simulate registration success and redirect to dashboard
+            window.location.href = 'dashboard.html';
+        });
+    </script>
+</body>
+
+</html>

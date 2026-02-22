@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Dashboard | Luminous Skin Clinic</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body style="overflow-x: hidden;">
+    <!-- Theme Toggle Background Fix for Dashboard -->
+    <div class="page-bg"
+        style="background-image: url('https://images.pexels.com/photos/3762882/pexels-photo-3762882.jpeg?auto=compress&cs=tinysrgb&w=1920&q=80'); position: fixed;">
+    </div>
+    <div class="overlay" style="position: fixed;"></div>
+
+    <header>
+        <a href="index.html" class="logo">
+            <div class="logo-icon"></div>
+            <span>Luminous Skin Clinic</span>
+        </a>
+        <div class="header-tools">
+            <div class="user-profile-summary">
+                <div style="text-align: right; line-height: 1.2;">
+                    <div style="font-weight: 700;">Alex Thompson</div>
+                    <div style="font-size: 0.75rem; opacity: 0.7;">Patient ID: #LS-9920</div>
+                </div>
+                <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=100"
+                    class="profile-pic-small" alt="Profile">
+                <a href="index.html" class="btn btn-outline"
+                    style="padding: 5px 12px; font-size: 0.8rem; margin-left: 15px; border-color: #ff4d4d; color: #ff4d4d;">
+                    <i class="fas fa-sign-out-alt"></i> Logout
+                </a>
+                <label class="theme-switch" style="margin-left: 15px;">
+                    <input type="checkbox" id="theme-toggle">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+    </header>
+
+    <div class="dashboard-container">
+        <!-- Sidebar Navigation -->
+        <aside class="dashboard-sidebar">
+            <a href="#overview" class="sidebar-link active" onclick="showSection('overview')">
+                <i class="fas fa-th-large"></i> <span>Overview</span>
+            </a>
+            <a href="#appointments" class="sidebar-link" onclick="showSection('appointments')">
+                <i class="fas fa-calendar-alt"></i> <span>My Appointments</span>
+            </a>
+            <a href="#treatments" class="sidebar-link" onclick="showSection('treatments')">
+                <i class="fas fa-magic"></i> <span>My Treatments</span>
+            </a>
+            <a href="#prescriptions" class="sidebar-link" onclick="showSection('prescriptions')">
+                <i class="fas fa-file-medical"></i> <span>Prescriptions</span>
+            </a>
+            <a href="#payments" class="sidebar-link" onclick="showSection('payments')">
+                <i class="fas fa-credit-card"></i> <span>Payment History</span>
+            </a>
+            <a href="#settings" class="sidebar-link" onclick="showSection('settings')">
+                <i class="fas fa-user-cog"></i> <span>Profile Settings</span>
+            </a>
+            <a href="index.html" class="sidebar-link logout-btn">
+                <i class="fas fa-sign-out-alt"></i> <span>Logout</span>
+            </a>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="dashboard-main">
+            <!-- 1. Overview Section -->
+            <section id="overview" class="dashboard-section active">
+                <div class="dashboard-header">
+                    <h2>Welcome back, <span style="color: var(--accent-color);">Alex</span>!</h2>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="glass-card stat-card">
+                        <h3>8</h3>
+                        <p>Sessions Completed</p>
+                    </div>
+                    <div class="glass-card stat-card">
+                        <h3>2</h3>
+                        <p>Ongoing Treatments</p>
+                    </div>
+                    <div class="glass-card stat-card">
+                        <h3>1</h3>
+                        <p>Pending Visits</p>
+                    </div>
+                </div>
+
+                <div class="grid">
+                    <div class="glass-card">
+                        <h3 style="margin-bottom: 1.5rem;"><i class="fas fa-clock"
+                                style="color: var(--accent-color); margin-right: 10px;"></i>Upcoming Appointment</h3>
+                        <div style="display: flex; gap: 20px; align-items: center;">
+                            <img src="https://images.pexels.com/photos/5998490/pexels-photo-5998490.jpeg?auto=compress&cs=tinysrgb&w=200"
+                                style="width: 80px; height: 80px; border-radius: 12px; object-fit: cover;">
+                            <div>
+                                <h4 style="margin-bottom: 5px;">Laser Rejuvenation Session</h4>
+                                <p style="font-size: 0.9rem; opacity: 0.8;">with Dr. Sarah Johnson</p>
+                                <p
+                                    style="font-size: 0.9rem; margin-top: 5px; color: var(--accent-color); font-weight: 700;">
+                                    Feb 28, 2026 | 10:30 AM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="glass-card">
+                        <h3 style="margin-bottom: 1.5rem;"><i class="fas fa-chart-line"
+                                style="color: var(--accent-color); margin-right: 10px;"></i>Treatment Progress</h3>
+                        <div>
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                                <span>Molecular Acne Clearance</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-bar" style="width: 75%;"></div>
+                            </div>
+                            <p style="font-size: 0.85rem; opacity: 0.7; margin-top: 10px;">Next session: Assessment of
+                                epidermal healing.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 2. My Appointments -->
+            <section id="appointments" class="dashboard-section">
+                <h2 style="margin-bottom: 2rem;">My Appointments</h2>
+                <div class="glass-card" style="padding: 0;">
+                    <table class="dashboard-table">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Doctor</th>
+                                <th>Treatment</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Feb 28, 2026</td>
+                                <td>Dr. Sarah Johnson</td>
+                                <td>Laser Rejuvenation</td>
+                                <td><span class="status-badge status-confirmed">Confirmed</span></td>
+                                <td><button class="btn btn-outline"
+                                        style="padding: 5px 12px; font-size: 0.8rem;">Reschedule</button></td>
+                            </tr>
+                            <tr>
+                                <td>Mar 15, 2026</td>
+                                <td>Dr. Michael Chen</td>
+                                <td>Dermal Consultation</td>
+                                <td><span class="status-badge status-pending">Pending</span></td>
+                                <td><button class="btn btn-outline"
+                                        style="padding: 5px 12px; font-size: 0.8rem; color: #ff4d4d; border-color: #ff4d4d;">Cancel</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Jan 12, 2026</td>
+                                <td>Dr. Sarah Johnson</td>
+                                <td>Molecular Acne</td>
+                                <td><span class="status-badge status-completed">Completed</span></td>
+                                <td><a href="#" style="color: var(--accent-color); font-size: 0.85rem;">View Notes</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- 3. My Treatments -->
+            <section id="treatments" class="dashboard-section">
+                <h2 style="margin-bottom: 2rem;">Treatment Pathways</h2>
+                <div class="grid">
+                    <div class="glass-card">
+                        <h3 style="color: var(--accent-color);">Molecular Acne Clearance</h3>
+                        <p style="opacity: 0.8; margin: 10px 0;">Clinical roadmap for deep-tissue inflammatory control.
+                        </p>
+                        <div class="progress-container">
+                            <div class="progress-bar" style="width: 75%;"></div>
+                        </div>
+                        <div style="margin-top: 15px;">
+                            <strong>Doctor's Notes:</strong>
+                            <p style="font-style: italic; font-size: 0.9rem; margin-top: 5px;">"Skin responding well to
+                                photodynamic therapy. Maintain the prescribed hydration serum levels."</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 4. Prescriptions -->
+            <section id="prescriptions" class="dashboard-section">
+                <h2 style="margin-bottom: 2rem;">Digital Prescriptions</h2>
+                <div class="glass-card" style="padding: 0;">
+                    <table class="dashboard-table">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Authorized By</th>
+                                <th>Contains</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Feb 01, 2026</td>
+                                <td>Dr. Sarah Johnson</td>
+                                <td>Active Recovery Kit (3 Items)</td>
+                                <td><a href="#" class="btn btn-outline" style="padding: 5px 12px; font-size: 0.8rem;"><i
+                                            class="fas fa-download"></i> PDF</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- 5. Payment History -->
+            <section id="payments" class="dashboard-section">
+                <h2 style="margin-bottom: 2rem;">Billing & Invoices</h2>
+                <div class="glass-card" style="padding: 0;">
+                    <table class="dashboard-table">
+                        <thead>
+                            <tr>
+                                <th>Invoice #</th>
+                                <th>Service</th>
+                                <th>Date</th>
+                                <th>Amount</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#LMC-8821</td>
+                                <td>Laser Session (Full Face)</td>
+                                <td>Feb 10, 2026</td>
+                                <td>₹4,500</td>
+                                <td><a href="#" style="color: var(--accent-color);"><i
+                                            class="fas fa-file-invoice-dollar"></i></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- 6. Profile Settings -->
+            <section id="settings" class="dashboard-section">
+                <h2 style="margin-bottom: 2rem;">Account Settings</h2>
+                <div class="glass-card">
+                    <form>
+                        <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+                            <div class="form-group">
+                                <label>Full Name</label>
+                                <input type="text" class="form-control" value="Alex Thompson">
+                            </div>
+                            <div class="form-group">
+                                <label>Email Address</label>
+                                <input type="email" class="form-control" value="alex.t@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label>Phone Number</label>
+                                <input type="text" class="form-control" value="+1 (555) 123-4567">
+                            </div>
+                            <div class="form-group">
+                                <label>Current Password</label>
+                                <input type="password" class="form-control" placeholder="••••••••">
+                            </div>
+                            <div class="form-group">
+                                <label>New Password</label>
+                                <input type="password" class="form-control" placeholder="New Password">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="margin-top: 20px;">Save Changes</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            document.querySelectorAll('.dashboard-section').forEach(section => {
+                section.classList.remove('active');
+            });
+
+            // Deactivate all links
+            document.querySelectorAll('.sidebar-link').forEach(link => {
+                link.classList.remove('active');
+            });
+
+            // Show target section
+            document.getElementById(sectionId).classList.add('active');
+
+            // Active clicked link
+            event.currentTarget.classList.add('active');
+
+            // Set URL hash without scrolling
+            history.pushState(null, null, '#' + sectionId);
+        }
+
+        // Handle URL hash on load
+        window.addEventListener('DOMContentLoaded', () => {
+            const hash = window.location.hash.substring(1);
+            if (hash) {
+                const targetLink = document.querySelector(`a[href="#${hash}"]`);
+                if (targetLink) targetLink.click();
+            }
+        });
+    </script>
+</body>
+
+</html>
