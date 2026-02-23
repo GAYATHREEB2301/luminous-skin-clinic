@@ -107,26 +107,49 @@ header {
 .logo {
     display: flex;
     align-items: center;
-    gap: 12px;
-    font-family: 'Outfit', sans-serif;
-    font-size: 1.4rem;
-    font-weight: 600;
-    color: var(--text-color);
-    text-transform: none;
-    letter-spacing: 0.5px;
+    gap: 15px;
     text-decoration: none;
     transition: var(--transition);
 }
 
 .logo-icon {
-    width: 42px;
-    height: 42px;
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="%23D4AF37"/><stop offset="100%" stop-color="%23F5D76E"/></linearGradient></defs><path d="M30 75C30 75 25 50 50 30C75 10 95 40 95 65C95 90 75 95 50 95" fill="none" stroke="url(%23g)" stroke-width="4" stroke-linecap="round" opacity="0.9"/><path d="M75 25L78 32L85 35L78 38L75 45 L72 38L65 35L72 32Z" fill="url(%23g)"/><circle cx="75" cy="35" r="10" fill="url(%23g)" opacity="0.2"/></svg>');
-    background-size: contain;
+    width: 50px;
+    height: 50px;
+    background-color: #111111;
+    border-radius: 50%;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="%23C9A227"/><stop offset="100%" stop-color="%23F5D76E"/></linearGradient></defs><circle cx="50" cy="50" r="48" fill="none" stroke="url(%23g)" stroke-width="1" opacity="0.3"/><path d="M35 25 C45 20, 60 22, 68 35 C72 42, 65 48, 62 50 C65 52, 65 58, 58 62 C62 68, 58 78, 45 80" fill="none" stroke="url(%23g)" stroke-width="3" stroke-linecap="round"/><path d="M68 45 L70 48 L73 49 L70 50 L68 53 L66 50 L63 49 L66 48 Z" fill="url(%23g)"><animate attributeName="opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite" /></path></svg>');
+    background-size: 70%;
     background-repeat: no-repeat;
     background-position: center;
-    filter: drop-shadow(0 0 8px rgba(212, 175, 55, 0.3));
+    border: 1px solid rgba(201, 162, 39, 0.3);
+    box-shadow: 0 0 15px rgba(201, 162, 39, 0.2);
     flex-shrink: 0;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.1;
+}
+
+.logo-main {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--text-color);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.logo-sub {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: var(--accent-color);
+    letter-spacing: 3px;
+    text-transform: none;
+    margin-top: 2px;
 }
 
 
@@ -671,6 +694,15 @@ section {
     gap: 30px;
 }
 
+.stats-2x2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 1fr;
+    gap: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 .container {
     max-width: 1400px;
     /* Increased container width for wider feel */
@@ -1024,10 +1056,15 @@ section {
         width: 100% !important;
     }
 
-    .grid,
+    .grid:not(.stats-2x2),
     .footer-content {
         grid-template-columns: 1fr !important;
         gap: 30px !important;
+    }
+
+    .stats-2x2 {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 20px !important;
     }
 
     .footer-section {
@@ -1047,13 +1084,27 @@ section {
     }
 }
 
-/* Extra Small (320px - 365px) */
-@media (max-width: 365px) {
-    .logo span {
-        font-size: 0.8rem !important;
+/* Extra Small (320px - 480px) */
+@media (max-width: 480px) {
+    .logo-main {
+        font-size: 1.1rem !important;
+    }
+
+    .logo-sub {
+        font-size: 0.6rem !important;
+        letter-spacing: 2px !important;
+    }
+
+    .logo-icon {
+        width: 40px !important;
+        height: 40px !important;
     }
 
     h1 {
         font-size: 1.7rem !important;
+    }
+
+    .stats-2x2 {
+        grid-template-columns: 1fr !important;
     }
 }
