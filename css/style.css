@@ -941,3 +941,223 @@ section {
     gap: 40px;
     margin-bottom: 3rem;
 }
+
+/* --- Responsive Design Enhancements --- */
+
+/* Tablet (max-width: 768px) */
+@media (max-width: 768px) {
+    section {
+        padding: 60px 5%;
+    }
+
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    .section-title h2 {
+        font-size: 2rem;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        justify-content: center;
+    }
+
+    .swipe-down {
+        bottom: 80px;
+        right: 20px;
+    }
+
+    .swipe-up {
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+/* Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+    header {
+        padding: 0.8rem 5% !important;
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        gap: 15px !important;
+        flex-wrap: nowrap !important;
+    }
+
+    .logo {
+        flex: 1 1 auto !important;
+        min-width: 0 !important;
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        gap: 8px !important;
+        justify-content: flex-start !important;
+    }
+
+    .logo span {
+        font-size: 1rem !important;
+        /* Slightly reduced to fit */
+        white-space: nowrap !important;
+        overflow: visible !important;
+        text-overflow: clip !important;
+        max-width: none !important;
+    }
+
+    .header-tools {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        gap: 10px !important;
+        order: 1 !important;
+        flex-shrink: 0 !important;
+    }
+
+    .menu-toggle {
+        display: block !important;
+        order: 2 !important;
+        font-size: 1.5rem !important;
+        flex-shrink: 0 !important;
+        margin-left: 5px !important;
+    }
+
+    .hero {
+        padding: 120px 1rem 40px;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+        line-height: 1.2;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .hero-btns {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100%;
+        gap: 12px !important;
+    }
+
+    .hero-btns .btn {
+        width: 100%;
+        margin: 0 !important;
+        text-align: center;
+    }
+
+    section {
+        padding: 50px 1rem;
+    }
+
+    .section-title h2 {
+        font-size: 1.8rem;
+    }
+
+    .section-title {
+        text-align: center !important;
+    }
+
+    .glass-card {
+        padding: 1.25rem;
+    }
+
+    /* Forced stacking for elements with inline flex styles */
+    div[style*="display: flex"]:not(header):not(.header-tools):not(.logo):not(.hero-btns),
+    section[style*="display: flex"] {
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        gap: 25px !important;
+    }
+
+    /* Fix image and div widths in stacked layouts */
+    div[style*="flex: 1"],
+    div[style*="flex: 1.5"],
+    div[style*="min-width: 300px"],
+    div[style*="min-width: 400px"] {
+        width: 100% !important;
+        min-width: 100% !important;
+    }
+
+    .grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px;
+    }
+
+    .btn {
+        width: 100% !important;
+        text-align: center !important;
+        padding: 15px 20px !important;
+        display: block !important;
+    }
+
+    .swipe-arrow {
+        width: 45px;
+        height: 45px;
+    }
+
+    .swipe-down {
+        bottom: 75px;
+        right: 15px;
+    }
+
+    .swipe-up {
+        bottom: 20px;
+        right: 15px;
+    }
+
+    /* Nav adjustment */
+    nav ul {
+        padding: 2rem 1rem;
+        gap: 15px;
+    }
+
+    /* Reduce large margins from inline styles */
+    section[style*="margin-top"],
+    section[style*="margin-bottom"],
+    .container[style*="margin-top"],
+    .container[style*="margin-bottom"] {
+        margin-top: 50px !important;
+        margin-bottom: 50px !important;
+    }
+}
+
+/* Extra Small (320px - 365px) */
+@media (max-width: 365px) {
+    .logo span {
+        font-size: 0.85rem !important;
+        /* Slightly smaller for very narrow screens */
+        max-width: none !important;
+        white-space: nowrap !important;
+    }
+
+    .hero h1 {
+        font-size: 1.7rem;
+    }
+
+    .btn {
+        padding: 12px 15px;
+        font-size: 0.85rem;
+    }
+}
