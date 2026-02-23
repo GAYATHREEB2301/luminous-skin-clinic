@@ -262,10 +262,6 @@ input:checked+.slider:before {
     right: 30px;
 }
 
-.swipe-down {
-    bottom: 90px;
-    right: 30px;
-}
 
 /* Buttons */
 .btn {
@@ -981,10 +977,6 @@ section {
         justify-content: center;
     }
 
-    .swipe-down {
-        bottom: 80px;
-        right: 20px;
-    }
 
     .swipe-up {
         bottom: 20px;
@@ -1117,10 +1109,6 @@ section {
         height: 45px;
     }
 
-    .swipe-down {
-        bottom: 75px;
-        right: 15px;
-    }
 
     .swipe-up {
         bottom: 20px;

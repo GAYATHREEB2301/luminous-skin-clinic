@@ -50,21 +50,13 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Swipe Up/Down Arrows
+    // Swipe Up Arrow
     const swipeUp = document.querySelector('.swipe-up');
-    const swipeDown = document.querySelector('.swipe-down');
 
     if (swipeUp) {
         swipeUp.addEventListener('click', (e) => {
             e.preventDefault();
             window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-    }
-
-    if (swipeDown) {
-        swipeDown.addEventListener('click', (e) => {
-            e.preventDefault();
-            window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
         });
     }
 
