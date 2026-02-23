@@ -9,7 +9,7 @@
     --secondary-color: #ffe5ec;
     --glass-bg: rgba(255, 255, 255, 0.7);
     --glass-border: rgba(255, 255, 255, 0.3);
-    --header-bg: transparent;
+    --header-bg: #ffffff;
     --header-scroll: #ffffff;
     --card-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
     --transition: all 0.3s ease;
@@ -24,8 +24,8 @@
     --secondary-color: #2c2c2c;
     --glass-bg: rgba(0, 0, 0, 0.6);
     --glass-border: rgba(255, 255, 255, 0.1);
-    --header-bg: transparent;
-    --header-scroll: #1a1a1a;
+    --header-bg: #111111;
+    --header-scroll: #111111;
     --card-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
     --overlay-bg: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4));
 }
@@ -95,18 +95,12 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 1.5rem 5%;
+    padding: 1rem 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
-    transition: var(--transition);
     background: var(--header-bg);
-}
-
-header.scrolled {
-    background: var(--header-scroll);
-    padding: 1rem 5%;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
