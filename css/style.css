@@ -107,36 +107,26 @@ header {
 .logo {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
     font-family: 'Outfit', sans-serif;
-    font-size: 1.6rem;
-    font-weight: 700;
-    color: var(--accent-color);
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--text-color);
+    text-transform: none;
+    letter-spacing: 0.5px;
     text-decoration: none;
+    transition: var(--transition);
 }
 
 .logo-icon {
-    width: 35px;
-    height: 35px;
-    background: linear-gradient(135deg, var(--accent-color), #f7e7ce);
-    border-radius: 50%;
-    position: relative;
-    box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
-}
-
-.logo-icon::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 15px;
-    height: 15px;
-    background: white;
-    mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black"><path d="M12 2L14.4 7L19.4 9.4L14.4 11.8L12 16.8L9.6 11.8L4.6 9.4L9.6 7L12 2Z"/></svg>') no-repeat center;
-    -webkit-mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black"><path d="M12 2L14.4 7L19.4 9.4L14.4 11.8L12 16.8L9.6 11.8L4.6 9.4L9.6 7L12 2Z"/></svg>') no-repeat center;
+    width: 42px;
+    height: 42px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="%23D4AF37"/><stop offset="100%" stop-color="%23F5D76E"/></linearGradient></defs><path d="M30 75C30 75 25 50 50 30C75 10 95 40 95 65C95 90 75 95 50 95" fill="none" stroke="url(%23g)" stroke-width="4" stroke-linecap="round" opacity="0.9"/><path d="M75 25L78 32L85 35L78 38L75 45 L72 38L65 35L72 32Z" fill="url(%23g)"/><circle cx="75" cy="35" r="10" fill="url(%23g)" opacity="0.2"/></svg>');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: drop-shadow(0 0 8px rgba(212, 175, 55, 0.3));
+    flex-shrink: 0;
 }
 
 
@@ -288,6 +278,8 @@ input:checked+.slider:before {
 .btn-outline:hover {
     background: var(--accent-color);
     color: white;
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+    transform: translateY(-2px);
 }
 
 /* Footer */
