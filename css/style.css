@@ -711,7 +711,7 @@ section {
 
 /* Hero Section */
 .hero {
-    min-height: 100vh;
+    min-height: 75vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -731,13 +731,13 @@ section {
 .hero h1 {
     font-size: 4rem;
     font-weight: 700;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     line-height: 1.1;
 }
 
 .hero p {
     font-size: 1.2rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
     opacity: 0.9;
 }
 
