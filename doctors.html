@@ -7,6 +7,8 @@
     <title>Medical Experts | Luminous Skin Clinic</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/svg+xml" href="assets/images/lsc-logo.svg">
+    <link rel="apple-touch-icon" href="assets/images/lsc-logo.svg">
 </head>
 
 <body>
@@ -17,7 +19,7 @@
 
     <header>
         <a href="index.html" class="logo">
-            <div class="logo-icon"></div>
+            <img src="assets/images/lsc-logo.svg" alt="Luminous Skin Clinic Logo">
             <div class="logo-text">
                 <span class="logo-main">LUMINOUS</span>
                 <span class="logo-sub">Skin Clinic</span>
@@ -63,248 +65,138 @@
         </section>
 
         <!-- Doctors Grid -->
-        <section class="container fade-in">
-            <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));">
+        <section class="container fade-in" style="padding: 60px 5% !important;">
+            <div class="grid"
+                style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px; align-items: stretch;">
                 <!-- Doctor 1 -->
-                <div class="glass-card" style="display: flex; flex-direction: column; gap: 20px;">
-                    <div style="display: flex; gap: 25px; align-items: center; flex-wrap: wrap;">
-                        <img src="https://images.pexels.com/photos/5998490/pexels-photo-5998490.jpeg"
-                            alt="Dr. Sarah Johnson"
-                            style="width: 180px; height: 180px; border-radius: 20px; object-fit: cover; box-shadow: var(--card-shadow);">
-                        <div style="flex: 1;">
-                            <h3 style="font-size: 2rem; margin-bottom: 0.5rem;">Dr. Sarah Johnson</h3>
-                            <p
-                                style="color: var(--accent-color); font-weight: 700; font-size: 1.1rem; margin-bottom: 0.5rem;">
-                                Chief Clinical Dermatologist</p>
-                            <p style="font-weight: 600; opacity: 0.8;">MD, PhD, DDVL, Board Certified</p>
-                            <p style="font-size: 0.9rem; margin-top: 0.5rem;"><i class="fas fa-briefcase"
-                                    style="color: var(--accent-color); margin-right: 8px;"></i> 15+ Years Clinical
-                                Experience</p>
-                            <div class="social-links">
-                                <a href="#" class="social-icon" aria-label="LinkedIn Profile"><i
-                                        class="fab fa-linkedin"></i></a>
-                                <a href="#" class="social-icon" aria-label="Instagram Profile"><i
-                                        class="fab fa-instagram"></i></a>
-                                <a href="#" class="social-icon" aria-label="Send Email"><i
-                                        class="fas fa-envelope"></i></a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="glass-card"
+                    style="display: flex; flex-direction: column; align-items: center; text-align: center; padding: 3rem;">
+                    <img src="https://images.pexels.com/photos/5998490/pexels-photo-5998490.jpeg"
+                        alt="Dr. Sarah Johnson"
+                        style="width: 220px; height: 220px; border-radius: 50%; object-fit: cover; box-shadow: var(--card-shadow); margin-bottom: 2rem; border: 3px solid var(--accent-color);">
+                    <h3 style="font-size: 1.8rem; margin-bottom: 0.5rem;">Dr. Sarah Johnson</h3>
+                    <p
+                        style="color: var(--accent-color); font-weight: 700; font-size: 1rem; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 1px;">
+                        Chief Clinical Dermatologist</p>
+                    <p style="font-size: 0.9rem; opacity: 0.8; margin-bottom: 1.5rem;">MD, PhD, Board Certified (15+ Yrs
+                        Exp)</p>
 
-                    <div style="border-top: 1px solid var(--glass-border); padding-top: 20px;">
-                        <h4 style="color: var(--accent-color); margin-bottom: 10px;">Professional Bio</h4>
-                        <p style="font-size: 1rem; line-height: 1.6; opacity: 0.9;">Dr. Johnson is a globally recognized
-                            authority in inflammatory skin conditions and medical-grade anti-aging therapies. She
-                            pioneered the "Molecular Restoration Protocol" at Luminous, focusing on cellular health
-                            before aesthetic enhancement. Her philosophy centers on clinical integrity, ensuring every
-                            treatment plan is rooted in rigorous dermatological science and patient safety.</p>
-                    </div>
+                    <p style="font-size: 0.95rem; line-height: 1.6; opacity: 0.9; margin-bottom: 2rem; flex: 1;">Dr.
+                        Johnson pioneered the "Molecular Restoration Protocol" at Luminous, focusing on cellular health
+                        before aesthetic enhancement. She is a globally recognized authority in anti-aging therapies.
+                    </p>
 
-                    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 15px;">
-                        <div style="margin-bottom: 15px;">
-                            <strong><i class="fas fa-award"
-                                    style="color: var(--accent-color); margin-right: 10px;"></i>Certifications:</strong>
-                            <p style="font-size: 0.9rem; margin-left: 28px;">IADVL Fellow, American Academy of
-                                Dermatology (AAD) International Member, Gold Medalist in Clinical Derm.</p>
-                        </div>
-                        <div style="margin-bottom: 15px;">
-                            <strong><i class="fas fa-magic"
-                                    style="color: var(--accent-color); margin-right: 10px;"></i>Signature
-                                Treatments:</strong>
-                            <p style="font-size: 0.9rem; margin-left: 28px;">Molecular Acne Clearance, Dermal
-                                Restoration, Precision Liquid Facelifts.</p>
-                        </div>
-                        <div>
-                            <strong><i class="fas fa-clock"
-                                    style="color: var(--accent-color); margin-right: 10px;"></i>Availability:</strong>
-                            <p style="font-size: 0.9rem; margin-left: 28px;">Mon, Wed, Fri (9:00 AM - 5:00 PM)</p>
-                        </div>
+                    <div style="margin-top: auto; width: 100%;">
+                        <a href="contact.html" class="btn btn-outline" style="width: 100%;">Book Consultation</a>
                     </div>
-
-                    <a href="contact.html" class="btn btn-primary"
-                        style="width: 100%; text-align: center; margin-top: auto;">Book Consultation with Dr. Sarah</a>
                 </div>
 
                 <!-- Doctor 2 -->
-                <div class="glass-card" style="display: flex; flex-direction: column; gap: 20px;">
-                    <div style="display: flex; gap: 25px; align-items: center; flex-wrap: wrap;">
-                        <img src="https://images.pexels.com/photos/8460157/pexels-photo-8460157.jpeg"
-                            alt="Dr. Michael Chen"
-                            style="width: 180px; height: 180px; border-radius: 20px; object-fit: cover; box-shadow: var(--card-shadow);">
-                        <div style="flex: 1;">
-                            <h3 style="font-size: 2rem; margin-bottom: 0.5rem;">Dr. Michael Chen</h3>
-                            <p
-                                style="color: var(--accent-color); font-weight: 700; font-size: 1.1rem; margin-bottom: 0.5rem;">
-                                Master Aesthetic Surgeon</p>
-                            <p style="font-weight: 600; opacity: 0.8;">MS, MCh (Plastic Surgery), FACS</p>
-                            <p style="font-size: 0.9rem; margin-top: 0.5rem;"><i class="fas fa-briefcase"
-                                    style="color: var(--accent-color); margin-right: 8px;"></i> 12+ Years Aesthetic
-                                Surgery</p>
-                            <div class="social-links">
-                                <a href="#" class="social-icon" aria-label="LinkedIn Profile"><i
-                                        class="fab fa-linkedin"></i></a>
-                                <a href="#" class="social-icon" aria-label="Twitter Profile"><i
-                                        class="fab fa-twitter"></i></a>
-                                <a href="#" class="social-icon" aria-label="Doctor Website"><i
-                                        class="fas fa-globe"></i></a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="glass-card"
+                    style="display: flex; flex-direction: column; align-items: center; text-align: center; padding: 3rem;">
+                    <img src="https://images.pexels.com/photos/8460157/pexels-photo-8460157.jpeg" alt="Dr. Michael Chen"
+                        style="width: 220px; height: 220px; border-radius: 50%; object-fit: cover; box-shadow: var(--card-shadow); margin-bottom: 2rem; border: 3px solid var(--accent-color);">
+                    <h3 style="font-size: 1.8rem; margin-bottom: 0.5rem;">Dr. Michael Chen</h3>
+                    <p
+                        style="color: var(--accent-color); font-weight: 700; font-size: 1rem; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 1px;">
+                        Master Aesthetic Surgeon</p>
+                    <p style="font-size: 0.9rem; opacity: 0.8; margin-bottom: 1.5rem;">MS, MCh (Plastic Surgery), FACS
+                        (12+ Yrs Exp)</p>
 
-                    <div style="border-top: 1px solid var(--glass-border); padding-top: 20px;">
-                        <h4 style="color: var(--accent-color); margin-bottom: 10px;">Professional Bio</h4>
-                        <p style="font-size: 1rem; line-height: 1.6; opacity: 0.9;">Dr. Chen specializes in minimally
-                            invasive facial contouring and advanced restorative surgery. Known for his "Sculptural
-                            Precision" technique, he focuses on restoring volume and architectural balance to the face.
-                            His work has been featured in multiple medical journals for innovative approaches to scar
-                            revision and non-surgical tissue tightening.</p>
-                    </div>
+                    <p style="font-size: 0.95rem; line-height: 1.6; opacity: 0.9; margin-bottom: 2rem; flex: 1;">Dr.
+                        Chen specializes in minimally invasive facial contouring. Known for his "Sculptural Precision"
+                        technique, he focuses on restoring architectural balance to the face.</p>
 
-                    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 15px;">
-                        <div style="margin-bottom: 15px;">
-                            <strong><i class="fas fa-award"
-                                    style="color: var(--accent-color); margin-right: 10px;"></i>Certifications:</strong>
-                            <p style="font-size: 0.9rem; margin-left: 28px;">Board Certified Plastic Surgeon, ASPS
-                                Member, Fellowship in Craniofacial Surgery (France).</p>
-                        </div>
-                        <div style="margin-bottom: 15px;">
-                            <strong><i class="fas fa-magic"
-                                    style="color: var(--accent-color); margin-right: 10px;"></i>Signature
-                                Treatments:</strong>
-                            <p style="font-size: 0.9rem; margin-left: 28px;">High-Definition Contouring, Laser
-                                Resurfacing, Advanced Tissue Restructuring.</p>
-                        </div>
-                        <div>
-                            <strong><i class="fas fa-clock"
-                                    style="color: var(--accent-color); margin-right: 10px;"></i>Availability:</strong>
-                            <p style="font-size: 0.9rem; margin-left: 28px;">Tue, Thu, Sat (10:00 AM - 6:00 PM)</p>
-                        </div>
+                    <div style="margin-top: auto; width: 100%;">
+                        <a href="contact.html" class="btn btn-outline" style="width: 100%;">Book Consultation</a>
                     </div>
-
-                    <a href="contact.html" class="btn btn-primary"
-                        style="width: 100%; text-align: center; margin-top: auto;">Book Consultation with Dr.
-                        Michael</a>
                 </div>
 
                 <!-- Doctor 3 -->
-                <div class="glass-card" style="display: flex; flex-direction: column; gap: 20px;">
-                    <div style="display: flex; gap: 25px; align-items: center; flex-wrap: wrap;">
-                        <img src="https://images.pexels.com/photos/5215024/pexels-photo-5215024.jpeg?auto=compress&cs=tinysrgb&w=800"
-                            alt="Dr. Elena Rodriguez"
-                            style="width: 180px; height: 180px; border-radius: 20px; object-fit: cover; box-shadow: var(--card-shadow);">
-                        <div style="flex: 1;">
-                            <h3 style="font-size: 2rem; margin-bottom: 0.5rem;">Dr. Elena Rodriguez</h3>
-                            <p
-                                style="color: var(--accent-color); font-weight: 700; font-size: 1.1rem; margin-bottom: 0.5rem;">
-                                Senior Laser & Light Specialist</p>
-                            <p style="font-weight: 600; opacity: 0.8;">MD, MSc (Clinical Derm), ESLD</p>
-                            <p style="font-size: 0.9rem; margin-top: 0.5rem;"><i class="fas fa-briefcase"
-                                    style="color: var(--accent-color); margin-right: 8px;"></i> 10+ Years Advanced
-                                Phototherapy</p>
-                            <div class="social-links">
-                                <a href="#" class="social-icon" aria-label="Instagram Profile"><i
-                                        class="fab fa-instagram"></i></a>
-                                <a href="#" class="social-icon" aria-label="Facebook Page"><i
-                                        class="fab fa-facebook"></i></a>
-                                <a href="#" class="social-icon" aria-label="Video Consultation"><i
-                                        class="fas fa-video"></i></a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="glass-card"
+                    style="display: flex; flex-direction: column; align-items: center; text-align: center; padding: 3rem;">
+                    <img src="https://images.pexels.com/photos/5215024/pexels-photo-5215024.jpeg?auto=compress&cs=tinysrgb&w=800"
+                        alt="Dr. Elena Rodriguez"
+                        style="width: 220px; height: 220px; border-radius: 50%; object-fit: cover; box-shadow: var(--card-shadow); margin-bottom: 2rem; border: 3px solid var(--accent-color);">
+                    <h3 style="font-size: 1.8rem; margin-bottom: 0.5rem;">Dr. Elena Rodriguez</h3>
+                    <p
+                        style="color: var(--accent-color); font-weight: 700; font-size: 1rem; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 1px;">
+                        Senior Laser Specialist</p>
+                    <p style="font-size: 0.9rem; opacity: 0.8; margin-bottom: 1.5rem;">MD, MSc (Clinical Derm), ESLD
+                        (10+ Yrs Exp)</p>
 
-                    <div style="border-top: 1px solid var(--glass-border); padding-top: 20px;">
-                        <h4 style="color: var(--accent-color); margin-bottom: 10px;">Professional Bio</h4>
-                        <p style="font-size: 1rem; line-height: 1.6; opacity: 0.9;">Dr. Rodriguez is an expert in
-                            pigmented lesion management and architectural laser therapy. She specializes in customizing
-                            light-based protocols for complex skin concerns, including melasma and refractory vascular
-                            conditions. Her patient-first approach ensures that even the most advanced laser procedures
-                            are comfortable and yield radiant results.</p>
-                    </div>
+                    <p style="font-size: 0.95rem; line-height: 1.6; opacity: 0.9; margin-bottom: 2rem; flex: 1;">Dr.
+                        Rodriguez is an expert in architectural laser therapy. She specializes in customizing
+                        light-based protocols for complex skin concerns and pigmentation.</p>
 
-                    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 15px;">
-                        <div style="margin-bottom: 15px;">
-                            <strong><i class="fas fa-award"
-                                    style="color: var(--accent-color); margin-right: 10px;"></i>Certifications:</strong>
-                            <p style="font-size: 0.9rem; margin-left: 28px;">European Society for Laser Dermatology
-                                Member, Specialist in Dermoscopy, Advanced Board of Photobiology.</p>
-                        </div>
-                        <div style="margin-bottom: 15px;">
-                            <strong><i class="fas fa-magic"
-                                    style="color: var(--accent-color); margin-right: 10px;"></i>Signature
-                                Treatments:</strong>
-                            <p style="font-size: 0.9rem; margin-left: 28px;">Dual-Phase Laser Resurfacing, Pigmentation
-                                Correction, Vascular Restoration.</p>
-                        </div>
-                        <div>
-                            <strong><i class="fas fa-clock"
-                                    style="color: var(--accent-color); margin-right: 10px;"></i>Availability:</strong>
-                            <p style="font-size: 0.9rem; margin-left: 28px;">Daily (11:00 AM - 4:00 PM) by Appointment
-                            </p>
-                        </div>
+                    <div style="margin-top: auto; width: 100%;">
+                        <a href="contact.html" class="btn btn-outline" style="width: 100%;">Book Consultation</a>
                     </div>
-
-                    <a href="contact.html" class="btn btn-primary"
-                        style="width: 100%; text-align: center; margin-top: auto;">Book Consultation with Dr. Elena</a>
                 </div>
 
                 <!-- Doctor 4 -->
-                <div class="glass-card" style="display: flex; flex-direction: column; gap: 20px;">
-                    <div style="display: flex; gap: 25px; align-items: center; flex-wrap: wrap;">
-                        <img src="https://images.pexels.com/photos/5452292/pexels-photo-5452292.jpeg"
-                            alt="Dr. James Wilson"
-                            style="width: 180px; height: 180px; border-radius: 20px; object-fit: cover; box-shadow: var(--card-shadow);">
-                        <div style="flex: 1;">
-                            <h3 style="font-size: 2rem; margin-bottom: 0.5rem;">Dr. James Wilson</h3>
-                            <p
-                                style="color: var(--accent-color); font-weight: 700; font-size: 1.1rem; margin-bottom: 0.5rem;">
-                                Cosmetic Dermatologist & Trichologist</p>
-                            <p style="font-weight: 600; opacity: 0.8;">MD, DNB (Derm), IADVL Member</p>
-                            <p style="font-size: 0.9rem; margin-top: 0.5rem;"><i class="fas fa-briefcase"
-                                    style="color: var(--accent-color); margin-right: 8px;"></i> 8+ Years Holistic Skin
-                                Care</p>
-                            <div class="social-links">
-                                <a href="#" class="social-icon" aria-label="LinkedIn Profile"><i
-                                        class="fab fa-linkedin"></i></a>
-                                <a href="#" class="social-icon" aria-label="Twitter Profile"><i
-                                        class="fab fa-twitter"></i></a>
-                                <a href="#" class="social-icon" aria-label="Instagram Profile"><i
-                                        class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="glass-card"
+                    style="display: flex; flex-direction: column; align-items: center; text-align: center; padding: 3rem;">
+                    <img src="https://images.pexels.com/photos/5452292/pexels-photo-5452292.jpeg" alt="Dr. James Wilson"
+                        style="width: 220px; height: 220px; border-radius: 50%; object-fit: cover; box-shadow: var(--card-shadow); margin-bottom: 2rem; border: 3px solid var(--accent-color);">
+                    <h3 style="font-size: 1.8rem; margin-bottom: 0.5rem;">Dr. James Wilson</h3>
+                    <p
+                        style="color: var(--accent-color); font-weight: 700; font-size: 1rem; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 1px;">
+                        Cosmetic Trichologist</p>
+                    <p style="font-size: 0.9rem; opacity: 0.8; margin-bottom: 1.5rem;">MD, DNB (Derm), IADVL Member (8+
+                        Yrs Exp)</p>
 
-                    <div style="border-top: 1px solid var(--glass-border); padding-top: 20px;">
-                        <h4 style="color: var(--accent-color); margin-bottom: 10px;">Professional Bio</h4>
-                        <p style="font-size: 1rem; line-height: 1.6; opacity: 0.9;">Dr. Wilson is a leading expert in
-                            hair restoration and non-invasive scalp therapies. He is known for integrating nutritional
-                            science with advanced follicular stimulants to treat refractory hair loss. His holistic
-                            approach ensures that patients achieve thick, healthy hair by addressing both internal
-                            deficiencies and external skin health.</p>
-                    </div>
+                    <p style="font-size: 0.95rem; line-height: 1.6; opacity: 0.9; margin-bottom: 2rem; flex: 1;">Dr.
+                        Wilson is a leading expert in hair restoration. He integrates nutritional science with advanced
+                        follicular stimulants to treat hair loss effectively.</p>
 
-                    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 15px;">
-                        <div style="margin-bottom: 15px;">
-                            <strong><i class="fas fa-award"
-                                    style="color: var(--accent-color); margin-right: 10px;"></i>Certifications:</strong>
-                            <p style="font-size: 0.9rem; margin-left: 28px;">Member of ISHRS (International Society of
-                                Hair Restoration Surgery), Certified in Robotic Hair Transplantation.</p>
-                        </div>
-                        <div style="margin-bottom: 15px;">
-                            <strong><i class="fas fa-magic"
-                                    style="color: var(--accent-color); margin-right: 10px;"></i>Signature
-                                Treatments:</strong>
-                            <p style="font-size: 0.9rem; margin-left: 28px;">PRP with Growth Factor Therapy, Robotic
-                                FUE, Non-Surgical Scalp Micropigmentation.</p>
-                        </div>
-                        <div>
-                            <strong><i class="fas fa-clock"
-                                    style="color: var(--accent-color); margin-right: 10px;"></i>Availability:</strong>
-                            <p style="font-size: 0.9rem; margin-left: 28px;">Mon - Sat (2:00 PM - 8:00 PM)</p>
-                        </div>
+                    <div style="margin-top: auto; width: 100%;">
+                        <a href="contact.html" class="btn btn-outline" style="width: 100%;">Book Consultation</a>
                     </div>
+                </div>
 
-                    <a href="contact.html" class="btn btn-primary"
-                        style="width: 100%; text-align: center; margin-top: auto;">Book Consultation with Dr. James</a>
+                <!-- Doctor 5 -->
+                <div class="glass-card"
+                    style="display: flex; flex-direction: column; align-items: center; text-align: center; padding: 3rem;">
+                    <img src="https://images.pexels.com/photos/5215024/pexels-photo-5215024.jpeg?auto=compress&cs=tinysrgb&w=400"
+                        alt="Dr. Sophia Martinez"
+                        style="width: 220px; height: 220px; border-radius: 50%; object-fit: cover; box-shadow: var(--card-shadow); margin-bottom: 2rem; border: 3px solid var(--accent-color);">
+                    <h3 style="font-size: 1.8rem; margin-bottom: 0.5rem;">Dr. Sophia Martinez</h3>
+                    <p
+                        style="color: var(--accent-color); font-weight: 700; font-size: 1rem; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 1px;">
+                        Dermatopathologist</p>
+                    <p style="font-size: 0.9rem; opacity: 0.8; margin-bottom: 1.5rem;">MD, FCAP, Board Certified (11+
+                        Yrs Exp)</p>
+
+                    <p style="font-size: 0.95rem; line-height: 1.6; opacity: 0.9; margin-bottom: 2rem; flex: 1;">Dr.
+                        Martinez specializes in the microscopic analysis of skin diseases. Her expertise ensures that
+                        every complex diagnosis at Luminous is clinically precise.</p>
+
+                    <div style="margin-top: auto; width: 100%;">
+                        <a href="contact.html" class="btn btn-outline" style="width: 100%;">Book Consultation</a>
+                    </div>
+                </div>
+
+                <!-- Doctor 6 -->
+                <div class="glass-card"
+                    style="display: flex; flex-direction: column; align-items: center; text-align: center; padding: 3rem;">
+                    <img src="https://images.pexels.com/photos/3714743/pexels-photo-3714743.jpeg?auto=compress&cs=tinysrgb&w=400"
+                        alt="Dr. David Kim"
+                        style="width: 220px; height: 220px; border-radius: 50%; object-fit: cover; box-shadow: var(--card-shadow); margin-bottom: 2rem; border: 3px solid var(--accent-color);">
+                    <h3 style="font-size: 1.8rem; margin-bottom: 0.5rem;">Dr. David Kim</h3>
+                    <p
+                        style="color: var(--accent-color); font-weight: 700; font-size: 1rem; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 1px;">
+                        Facial Aesthetics Specialist</p>
+                    <p style="font-size: 0.9rem; opacity: 0.8; margin-bottom: 1.5rem;">MD, Board Certified (9+ Yrs Exp)
+                    </p>
+
+                    <p style="font-size: 0.95rem; line-height: 1.6; opacity: 0.9; margin-bottom: 2rem; flex: 1;">Dr. Kim
+                        is a master of liquid facelifts and injectable enhancements. He focuses on natural-looking
+                        rejuvenation through precise dermal fillers and neuromodulators.</p>
+
+                    <div style="margin-top: auto; width: 100%;">
+                        <a href="contact.html" class="btn btn-outline" style="width: 100%;">Book Consultation</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -425,7 +317,7 @@
         <div class="footer-content">
             <div class="footer-section">
                 <a href="index.html" class="logo" style="margin-bottom: 1.5rem;">
-                    <div class="logo-icon"></div>
+                    <img src="assets/images/lsc-logo.svg" alt="Luminous Skin Clinic Logo">
                     <div class="logo-text">
                         <span class="logo-main">LUMINOUS</span>
                         <span class="logo-sub">Skin Clinic</span>
@@ -434,12 +326,13 @@
                 <p>Establishing the global standard in dermatological care and aesthetic restoration. </p>
             </div>
             <div class="footer-section">
-                <h3>Social Connect</h3>
-                <div class="social-links">
-                    <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                </div>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="treatments.html">Treatments</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
             </div>
             <div class="footer-section">
                 <h3>Clinical Area</h3>

@@ -157,22 +157,15 @@ header {
 .logo {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 12px;
     text-decoration: none;
     transition: var(--transition);
 }
 
-.logo-icon {
-    width: 50px;
+.logo img {
     height: 50px;
-    background-color: #111111;
-    border-radius: 50%;
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="%23C9A227"/><stop offset="100%" stop-color="%23F5D76E"/></linearGradient></defs><circle cx="50" cy="50" r="48" fill="none" stroke="url(%23g)" stroke-width="1" opacity="0.3"/><path d="M42 22 C52 22, 58 25, 60 32 L65 40 L60 44 C65 47, 65 52, 60 55 C60 65, 52 78, 38 82" fill="none" stroke="url(%23g)" stroke-width="2.2" stroke-linecap="round" opacity="0.9"/><circle cx="52" cy="46" r="3" fill="url(%23g)" filter="blur(2px)"><animate attributeName="opacity" values="0.3;0.8;0.3" dur="2s" repeatCount="indefinite" /></circle><path d="M52 41 L54 44 L57 46 L54 48 L52 51 L50 48 L47 46 L50 44 Z" fill="url(%23g)"><animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite" /></path></svg>');
-    background-size: 85%;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: 1px solid rgba(201, 162, 39, 0.3);
-    box-shadow: 0 0 20px rgba(201, 162, 39, 0.15);
+    width: auto;
+    display: block;
     flex-shrink: 0;
 }
 
@@ -188,7 +181,7 @@ header {
     font-size: 1.4rem;
     font-weight: 700;
     color: var(--text-color);
-    letter-spacing: 2.5px;
+    letter-spacing: 2px;
     text-transform: uppercase;
 }
 
@@ -197,10 +190,12 @@ header {
     font-size: 0.75rem;
     font-weight: 400;
     color: var(--accent-color);
-    letter-spacing: 3.5px;
+    letter-spacing: 2.5px;
     text-transform: none;
     margin-top: 1px;
 }
+
+
 
 /* Image Polishing */
 .img-polished {
@@ -805,9 +800,12 @@ footer {
         letter-spacing: 2.5px;
     }
 
-    .logo-icon {
-        width: 42px;
-        height: 42px;
+    .logo img {
+        height: 45px;
+    }
+
+    .logo {
+        gap: 10px;
     }
 
     .menu-toggle {
@@ -1325,6 +1323,14 @@ main section:last-of-type {
 
 /* Extra Small (320px - 480px) */
 @media (max-width: 480px) {
+    .logo img {
+        height: 38px;
+    }
+
+    .logo {
+        gap: 8px;
+    }
+
     .logo-main {
         font-size: 1.1rem !important;
     }
@@ -1332,11 +1338,6 @@ main section:last-of-type {
     .logo-sub {
         font-size: 0.6rem !important;
         letter-spacing: 2px !important;
-    }
-
-    .logo-icon {
-        width: 40px !important;
-        height: 40px !important;
     }
 
     h1 {
