@@ -12,6 +12,9 @@
 </head>
 
 <body>
+    <div class="page-bg"
+        style="background-image: url('https://images.pexels.com/photos/3762466/pexels-photo-3762466.jpeg?auto=compress&cs=tinysrgb&w=1920&q=80');">
+    </div>
     <div class="overlay"></div>
 
     <header>
@@ -51,19 +54,21 @@
     <main>
         <!-- Hero Section -->
         <section class="hero fade-in">
-            <div class="hero-content glass-card" style="max-width: 800px; margin: 0 auto;">
-                <h1>Reveal Your Natural Glow</h1>
-                <p>Professional medical-aesthetic care designed to restore your skin's health and beauty.</p>
-                <div class="hero-btns">
-                    <a href="contact.html" class="btn btn-primary">Book Appointment</a>
-                    <a href="treatments.html" class="btn btn-outline">Explore Treatments</a>
+            <div class="container">
+                <div class="hero-content glass-card" style="max-width: 800px; margin: 0 auto;">
+                    <h1>Reveal Your Natural Glow</h1>
+                    <p>Professional medical-aesthetic care designed to restore your skin's health and beauty.</p>
+                    <div class="hero-btns">
+                        <a href="contact.html" class="btn btn-primary">Book Appointment</a>
+                        <a href="treatments.html" class="btn btn-outline">Explore Treatments</a>
+                    </div>
                 </div>
             </div>
         </section>
 
 
         <!-- Stats Section -->
-        <section class="container fade-in" style="padding: 60px 0;">
+        <section class="container fade-in">
             <div class="stats-2x2">
                 <div style="text-align: center;" class="glass-card">
                     <h2 style="font-size: 3rem; color: var(--accent-color);">15+</h2>
@@ -141,10 +146,6 @@
             </div>
             <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
                 <div class="glass-card" style="padding: 0; overflow: hidden; height: 300px;">
-                    <img src="https://images.pexels.com/photos/6620698/pexels-photo-6620698.jpeg" alt="Clinic Interior"
-                        style="width: 100%; height: 100%; object-fit: cover;" class="img-polished">
-                </div>
-                <div class="glass-card" style="padding: 0; overflow: hidden; height: 300px;">
                     <img src="https://images.pexels.com/photos/3985338/pexels-photo-3985338.jpeg"
                         alt="Dermatological Analysis" style="width: 100%; height: 100%; object-fit: cover;"
                         class="img-polished">
@@ -163,53 +164,60 @@
         </section>
 
         <!-- Testimonials Section -->
-        <section class="container fade-in"
-            style="background: var(--primary-color); padding: 100px 5%; border-radius: 30px; margin-top: 80px;">
-            <div class="section-title">
-                <h2>Voices of Luminous</h2>
-                <p>Real stories from our community of glowing patients.</p>
-            </div>
-            <div class="grid">
-                <!-- Review 1 -->
-                <div class="glass-card" style="text-align: center;">
-                    <div
-                        style="display: flex; gap: 5px; color: var(--accent-color); justify-content: center; margin-bottom: 1rem;">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                            class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <p style="font-style: italic; opacity: 0.9;">"Luminous Skin Clinic has completely transformed my
-                        confidence. The staff is incredibly knowledgeable, and the environment is so calming. My skin
-                        has never looked better!"</p>
-                    <h4 style="margin-top: 1.5rem; color: var(--accent-color);">- Amanda S., Entrepreneur</h4>
+        <section class="container fade-in">
+            <div style="background: var(--primary-color); padding: 4rem; border-radius: 30px;">
+                <div class="section-title">
+                    <h2>Voices of Luminous</h2>
+                    <p>Real stories from our community of glowing patients.</p>
                 </div>
-                <!-- Review 2 -->
-                <div class="glass-card" style="text-align: center;">
-                    <div
-                        style="display: flex; gap: 5px; color: var(--accent-color); justify-content: center; margin-bottom: 1rem;">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                <div class="grid">
+                    <!-- Review 1 -->
+                    <div class="glass-card testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <div class="testimonial-text">
+                            <p style="font-style: italic; opacity: 0.9;">"Luminous Skin Clinic has completely
+                                transformed my
+                                confidence. The staff is incredibly knowledgeable, and the environment is so calming. My
+                                skin has never looked better!"</p>
+                        </div>
+                        <h4 class="testimonial-author">- Amanda S., Entrepreneur</h4>
                     </div>
-                    <p style="font-style: italic; opacity: 0.9;">"The laser rejuvenation sessions were life-changing. I
-                        had stubborn pigmentation for years, and now my skin is clear and radiant. Highly recommend Dr.
-                        Sarah!"</p>
-                    <h4 style="margin-top: 1.5rem; color: var(--accent-color);">- Michael R., Creative Director</h4>
-                </div>
-                <!-- Review 3 -->
-                <div class="glass-card" style="text-align: center;">
-                    <div
-                        style="display: flex; gap: 5px; color: var(--accent-color); justify-content: center; margin-bottom: 1rem;">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                            class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <!-- Review 2 -->
+                    <div class="glass-card testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <div class="testimonial-text">
+                            <p style="font-style: italic; opacity: 0.9;">"The laser rejuvenation sessions were
+                                life-changing. I had stubborn pigmentation for years, and now my skin is clear and
+                                radiant.
+                                Highly recommend Dr. Sarah!"</p>
+                        </div>
+                        <h4 class="testimonial-author">- Michael R., Creative Director</h4>
                     </div>
-                    <p style="font-style: italic; opacity: 0.9;">"Finally, a clinic that understands sensitive skin!
-                        Their bespoke aftercare plan was the first thing that actually worked for me without causing
-                        irritation."</p>
-                    <h4 style="margin-top: 1.5rem; color: var(--accent-color);">- Elena G., Fashion Model</h4>
+                    <!-- Review 3 -->
+                    <div class="glass-card testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="testimonial-text">
+                            <p style="font-style: italic; opacity: 0.9;">"Finally, a clinic that understands sensitive
+                                skin!
+                                Their bespoke aftercare plan was the first thing that actually worked for me without
+                                causing
+                                irritation."</p>
+                        </div>
+                        <h4 class="testimonial-author">- Elena G., Fashion Model</h4>
+                    </div>
                 </div>
-            </div>
-            <div style="text-align: center; margin-top: 3rem;">
-                <a href="testimonials.html" class="btn btn-outline">Read All Success Stories</a>
-            </div>
+                <div style="display: flex; justify-content: center; margin-top: 3.5rem;">
+                    <a href="testimonials.html" class="btn btn-outline">Read All Success Stories</a>
+                </div>
         </section>
 
         <!-- Final CTA Section -->
@@ -264,8 +272,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Luminous Skin Clinic. All rights reserved. | <a href="#" class="swipe-up"
-                    style="color: var(--accent-color); text-decoration: none;">Back to Top</a></p>
+            <p>&copy; 2026 Luminous Skin Clinic. All rights reserved.</p>
         </div>
     </footer>
 

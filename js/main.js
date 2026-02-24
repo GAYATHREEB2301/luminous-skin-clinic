@@ -140,5 +140,31 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
-});
+    // ── Page Transition (Fade-out on navigate, Fade-in on load) ─────────────
+    document.querySelectorAll('a').forEach(link => {
+        const href = link.getAttribute('href');
 
+        // Skip: no href, anchors (#...), external links, or special protocols
+        if (
+            !href ||
+            href.startsWith('#') ||
+            href.startsWith('http') ||
+            href.startsWith('mailto') ||
+            href.startsWith('tel') ||
+            href.startsWith('javascript')
+        ) return;
+
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = this.getAttribute('href');
+
+            // Trigger CSS fade-out class
+            document.body.classList.add('page-transition-out');
+
+            // Navigate after the 0.3s transition completes
+            setTimeout(() => {
+                window.location.href = target;
+            }, 300);
+        });
+    });
+});
